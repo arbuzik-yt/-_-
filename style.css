@@ -1,0 +1,17 @@
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Синий фон */
+    color: white; /* Белый текст */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругляем углы */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
+}

@@ -1,0 +1,33 @@
+body {
+    background-color: #20004c;
+}
+
+h1, h2 {
+    margin: 8px 0 8px 0;
+}
+
+p {
+    margin: 4px 0 4px 0;
+}
+
+
+.panel {
+	background-color: blue;
+	border: 2px solid #ccc;
+    width: 100%;
+	padding: 4px;
+	margin: 4px;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+	padding: 8px;
+	background: #ffffff;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
