@@ -1,33 +1,27 @@
 body {
-    background-color: #20004c;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-image: url(фон.png);
 }
-
-h1 {
-    margin: 8px 50 8px 50;
-}
-
-p {
-    margin: 4px 0 4px 0;
-}
-
 
 .panel {
 	background-color: blue;
-	border: 2px solid #ccc;
+	border: 0px solid #ccc;
     width: 100%;
-	padding: 4px;
-	margin: 4px;
+	padding: 1px;
+	margin: 1px;
 	display: inline-block;
 	box-sizing: border-box;
 }
 
 .card {
-    width: 100%;
+    width: 65%;
 	padding: 8px;
-	background: #ffffff;
+	background: #8000ff;
 	border: 2px solid #ddd;
-	border-radius: 8px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 0px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 }
 
 .download-button {
