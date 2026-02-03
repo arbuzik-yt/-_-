@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    max-width: 90%;
+}
+
+.logo {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    position: relative; /* For pseudo-elements */
+    display: inline-block; /* To contain pseudo-elements */
+    color: #fff;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Subtle text glow */
+}
+
+/* Watermelon slice shapes using pseudo-elements */
+.logo::before, .logo::after {
+    content: '';
+    position: absolute;
+    width: 35px; /* Width of the slice */
+    height: 70px; /* Height of the slice */
+    border-radius: 50%; /* Make it an oval */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1; /* Behind the text */
+}
+
+.logo::before {
+    background-color: #3fba00; /* Green part */
+    left: -45px; /* Position to the left of the text */
+    transform: translateY(-50%) rotate(-30deg); /* Rotate for slice look */
+}
+
+.logo::after {
+    background-color: #ff523d; /* Reddish part */
+    right: -45px; /* Position to the right of the text */
+    transform: translateY(-50%) rotate(30deg); /* Rotate for slice look */
+}
+
+
+.subtitle {
+    font-size: 1.2em;
+    color: #bbb;
+    margin-bottom: 40px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid transparent; /* Start with transparent border */
+    border-radius: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.youtube {
+    border-color: #3fba00; /* Green border */
+    box-shadow: 0 0 10px #3fba0050, inset 0 0 5px #3fba0030; /* Inner and outer glow */
+}
+.youtube:hover {
+    box-shadow: 0 0 20px #3fba0080, inset 0 0 10px #3fba0050;
+}
+
+.telegram {
+    border-color: #0088cc; /* Telegram blue border */
+    box-shadow: 0 0 10px #0088cc50, inset 0 0 5px #0088cc30;
+}
+.telegram:hover {
+    box-shadow: 0 0 20px #0088cc80, inset 0 0 10px #0088cc50;
+}
+
+.download-games {
+    border-color: #ffcc00; /* Gold/yellow border for new button */
+    box-shadow: 0 0 10px #ffcc0050, inset 0 0 5px #ffcc0030;
+}
+.download-games:hover {
+    box-shadow: 0 0 20px #ffcc0080, inset 0 0 10px #ffcc0050;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 2.5em;
+    }
+    .logo::before { left: -30px; width: 25px; height: 50px; }
+    .logo::after { right: -30px; width: 25px; height: 50px; }
+
+    .subtitle {
+        font-size: 1em;
+    }
+    .button {
+        padding: 12px 25px;
+        font-size: 1em;
+        width: calc(100% - 40px); /* Adjust for padding/gap */
+    }
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+    }
+}
